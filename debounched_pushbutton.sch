@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 22 22
 Title ""
 Date ""
 Rev ""
@@ -22,7 +22,7 @@ AR Path="/5E7FE069/5E804E14" Ref="SW1"  Part="1"
 AR Path="/5E8135E4/5E804E14" Ref="SW2"  Part="1" 
 F 0 "SW2" H 1450 1635 50  0000 C CNN
 F 1 "SW_Push_Dual" H 1450 1544 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1450 1550 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR" H 1450 1550 50  0001 C CNN
 F 3 "" H 1450 1550 50  0001 C CNN
 	1    1450 1350
 	1    0    0    -1  

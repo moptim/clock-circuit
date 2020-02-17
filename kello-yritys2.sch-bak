@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 22
 Title ""
 Date ""
 Rev ""
@@ -542,10 +542,10 @@ Wire Wire Line
 Wire Wire Line
 	1950 6550 1950 4700
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5E47CB5F
 P 1200 2200
-F 0 "C?" H 1315 2246 50  0000 L CNN
+F 0 "C8" H 1315 2246 50  0000 L CNN
 F 1 "100nF" H 1315 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1238 2050 50  0001 C CNN
 F 3 "~" H 1200 2200 50  0001 C CNN
