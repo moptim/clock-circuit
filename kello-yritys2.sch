@@ -14,26 +14,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4900 2400 600  1300
+S 4950 2400 600  1300
 U 5E309501
 F0 "Naytto" 50
 F1 "naytto.sch" 50
-F2 "Glo0" I L 4900 2500 50 
-F3 "Glo1" I L 4900 2600 50 
-F4 "Glo2" I L 4900 2700 50 
-F5 "Glo3" I L 4900 2800 50 
-F6 "Glo4" I L 4900 2900 50 
-F7 "Glo5" I L 4900 3000 50 
-F8 "Glo6" I L 4900 3100 50 
-F9 "Glo7" I L 4900 3200 50 
-F10 "Glo8" I L 4900 3300 50 
-F11 "Glo9" I L 4900 3400 50 
-F12 "GloA" I L 4900 3500 50 
-F13 "Ghi0" I R 5500 2500 50 
-F14 "Ghi1" I R 5500 2600 50 
-F15 "Ghi2" I R 5500 2700 50 
-F16 "Ghi3" I R 5500 2800 50 
-F17 "GloB" I L 4900 3600 50 
+F2 "Glo0" I L 4950 2500 50 
+F3 "Glo1" I L 4950 2600 50 
+F4 "Glo2" I L 4950 2700 50 
+F5 "Glo3" I L 4950 2800 50 
+F6 "Glo4" I L 4950 2900 50 
+F7 "Glo5" I L 4950 3000 50 
+F8 "Glo6" I L 4950 3100 50 
+F9 "Glo7" I L 4950 3200 50 
+F10 "Glo8" I L 4950 3300 50 
+F11 "Glo9" I L 4950 3400 50 
+F12 "GloA" I L 4950 3500 50 
+F13 "Ghi0" I R 5550 2500 50 
+F14 "Ghi1" I R 5550 2600 50 
+F15 "Ghi2" I R 5550 2700 50 
+F16 "Ghi3" I R 5550 2800 50 
+F17 "GloB" I L 4950 3600 50 
 $EndSheet
 $Comp
 L Sensor_Optical:TEPT4400 Q1
@@ -90,17 +90,6 @@ F 3 " ~" H 3875 1150 50  0001 C CNN
 	1    5150 1700
 	-1   0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATmega:ATmega328PB-AU U1
-U 1 1 5E7981AC
-P 2550 3900
-F 0 "U1" H 2550 2311 50  0000 C CNN
-F 1 "ATmega328PB-AU" H 2550 2220 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2550 3900 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 2550 3900 50  0001 C CNN
-	1    2550 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 3000 3150 3000
 Wire Wire Line
@@ -116,15 +105,9 @@ Wire Wire Line
 Wire Wire Line
 	4750 1600 3750 1600
 Wire Wire Line
-	3750 1600 3750 2500
-Wire Wire Line
 	4750 1500 3650 1500
 Wire Wire Line
-	3650 1500 3650 2600
-Wire Wire Line
 	4750 1700 3550 1700
-Wire Wire Line
-	3550 1700 3550 2400
 $Comp
 L Device:R R4
 U 1 1 5E7D2D9E
@@ -174,30 +157,6 @@ F 3 "~" H 5250 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 2100 5250 2200
-Wire Wire Line
-	3150 4400 5600 4400
-Wire Wire Line
-	5600 4400 5600 2500
-Wire Wire Line
-	5600 2500 5500 2500
-Wire Wire Line
-	5500 2600 5700 2600
-Wire Wire Line
-	5700 2600 5700 4500
-Wire Wire Line
-	5700 4500 3150 4500
-Wire Wire Line
-	3150 4600 5800 4600
-Wire Wire Line
-	5800 4600 5800 2700
-Wire Wire Line
-	5800 2700 5500 2700
-Wire Wire Line
-	5500 2800 5900 2800
-Wire Wire Line
-	5900 2800 5900 4700
-Wire Wire Line
-	5900 4700 3150 4700
 $Comp
 L power:+5V #PWR0105
 U 1 1 5E7DD657
@@ -277,8 +236,6 @@ F 3 "~" H 2550 5700 50  0001 C CNN
 	1    2550 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 5700 2550 5400
 $Comp
 L Device:R R1
 U 1 1 5E83AA86
@@ -289,17 +246,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 5100 50  0001 C CNN
 F 3 "~" H 1500 5100 50  0001 C CNN
 	1    1500 5100
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5E83BA1A
-P 1500 5500
-F 0 "C2" H 1615 5546 50  0000 L CNN
-F 1 "1n" H 1615 5455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1538 5350 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-	1    1500 5500
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
@@ -345,9 +291,6 @@ Wire Wire Line
 	800  2700 800  2800
 Wire Wire Line
 	1500 5750 1500 5700
-Connection ~ 1500 5700
-Wire Wire Line
-	1500 5700 1500 5650
 Wire Wire Line
 	750  5700 1500 5700
 $Comp
@@ -370,23 +313,9 @@ Wire Wire Line
 Wire Wire Line
 	1450 4300 1450 4500
 Wire Wire Line
-	1450 4500 1950 4500
-Wire Wire Line
 	750  5600 1350 5600
 Wire Wire Line
 	1950 4600 1350 4600
-Wire Wire Line
-	1350 4600 1350 5300
-Wire Wire Line
-	1350 5300 1500 5300
-Wire Wire Line
-	1500 5300 1500 5350
-Connection ~ 1350 5300
-Wire Wire Line
-	1350 5300 1350 5600
-Wire Wire Line
-	1500 5300 1500 5250
-Connection ~ 1500 5300
 Wire Wire Line
 	1500 4950 1500 4850
 Wire Wire Line
@@ -447,30 +376,6 @@ F 3 "~" H 1500 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
-U 1 1 5EA08B4B
-P 1500 6450
-F 0 "R2" V 1293 6450 50  0000 C CNN
-F 1 "150k" V 1384 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 6450 50  0001 C CNN
-F 3 "~" H 1500 6450 50  0001 C CNN
-	1    1500 6450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 6450 1250 6450
-Wire Wire Line
-	1650 6450 1750 6450
-Wire Wire Line
-	1750 6450 1750 6250
-Wire Wire Line
-	1750 6250 1350 6250
-Connection ~ 1350 6250
-Wire Wire Line
-	1250 6550 1950 6550
-Wire Wire Line
-	1950 6550 1950 4700
-$Comp
 L Device:C C8
 U 1 1 5E47CB5F
 P 1200 2200
@@ -490,105 +395,169 @@ Wire Wire Line
 	1200 1700 1600 1700
 Connection ~ 1600 1700
 Wire Wire Line
-	1950 2700 1600 2700
-Connection ~ 1950 2700
-Wire Wire Line
 	800  2700 1200 2700
-Connection ~ 1600 2700
 Wire Wire Line
 	1200 2350 1200 2700
 Connection ~ 1200 2700
 Wire Wire Line
 	1200 2700 1600 2700
 Wire Wire Line
-	4800 2700 4900 2700
-Wire Wire Line
-	3150 2700 4650 2700
-Wire Wire Line
-	4900 3600 4800 3600
-Wire Wire Line
-	4800 3600 4800 4800
-Wire Wire Line
-	3150 4800 4800 4800
-Wire Wire Line
-	3750 2500 4900 2500
-Connection ~ 3750 2500
-Wire Wire Line
-	3750 2500 3750 3000
-Connection ~ 3650 2600
-Wire Wire Line
-	3650 2600 3650 3100
-Wire Wire Line
-	3650 2600 4900 2600
-Wire Wire Line
 	3450 1800 3450 3600
-Wire Wire Line
-	4800 2700 4800 2400
-Wire Wire Line
-	4800 2400 3550 2400
-Connection ~ 3550 2400
-Wire Wire Line
-	3550 2400 3550 3200
-Wire Wire Line
-	3150 2900 3850 2900
-Wire Wire Line
-	4250 2800 4250 3300
-Wire Wire Line
-	3150 2800 4250 2800
-Wire Wire Line
-	4250 3300 4900 3300
-Wire Wire Line
-	4900 2800 4350 2800
-Wire Wire Line
-	4350 2800 4350 4900
-Wire Wire Line
-	3150 4900 4350 4900
-Wire Wire Line
-	4900 3100 4450 3100
-Wire Wire Line
-	4450 3100 4450 5000
-Wire Wire Line
-	3150 5000 4450 5000
-Wire Wire Line
-	4550 5100 4550 3200
-Wire Wire Line
-	4550 3200 4900 3200
-Wire Wire Line
-	3150 5100 4550 5100
-Wire Wire Line
-	4650 3500 4650 2700
-Wire Wire Line
-	4650 3500 4900 3500
-Wire Wire Line
-	3850 2900 3850 3400
-Wire Wire Line
-	4150 3000 4900 3000
-Wire Wire Line
-	3150 3400 3750 3400
-Wire Wire Line
-	4050 2900 4900 2900
-Wire Wire Line
-	3150 3300 3650 3300
 Wire Wire Line
 	4750 2300 3950 2300
 Wire Wire Line
 	3950 2300 3950 4200
 Wire Wire Line
-	4050 3100 3750 3100
+	3650 1500 3650 3100
 Wire Wire Line
-	3750 3100 3750 3200
+	3750 1600 3750 2600
 Wire Wire Line
-	4050 3100 4050 2900
+	3550 1700 3550 3200
 Wire Wire Line
-	3750 3200 3650 3200
+	5650 2500 5550 2500
 Wire Wire Line
-	3650 3200 3650 3300
+	5550 2600 5750 2600
 Wire Wire Line
-	3750 3400 3750 3300
+	5850 2700 5550 2700
 Wire Wire Line
-	3750 3300 4150 3300
+	5550 2800 5950 2800
 Wire Wire Line
-	4150 3300 4150 3000
+	3150 2700 3250 2700
 Wire Wire Line
-	3850 3400 4900 3400
+	4150 2900 4150 3100
+Wire Wire Line
+	4150 3100 4950 3100
+Wire Wire Line
+	3150 2900 4150 2900
+Connection ~ 3650 3100
+Connection ~ 3550 3200
+Wire Wire Line
+	3150 2800 4350 2800
+Wire Wire Line
+	3550 3200 4250 3200
+Connection ~ 3750 2600
+Wire Wire Line
+	3750 2600 3750 3000
+Wire Wire Line
+	3850 3100 3850 3000
+Wire Wire Line
+	3650 3100 3850 3100
+Wire Wire Line
+	3850 3000 4950 3000
+Wire Wire Line
+	3150 3400 4650 3400
+Wire Wire Line
+	4250 2900 4250 3200
+Wire Wire Line
+	4250 2900 4950 2900
+Wire Wire Line
+	4350 3200 4350 2800
+Wire Wire Line
+	4350 3200 4950 3200
+Wire Wire Line
+	4450 2800 4450 2600
+Wire Wire Line
+	4450 2600 3750 2600
+Wire Wire Line
+	4450 2800 4950 2800
+Wire Wire Line
+	4950 3600 4850 3600
+Wire Wire Line
+	4950 2500 4550 2500
+Wire Wire Line
+	4550 2500 4550 4900
+Wire Wire Line
+	3150 4900 4550 4900
+Wire Wire Line
+	4650 2600 4650 3400
+Wire Wire Line
+	4650 2600 4950 2600
+Wire Wire Line
+	3150 5100 4150 5100
+Wire Wire Line
+	3250 3500 3250 2700
+Wire Wire Line
+	3250 3500 4950 3500
+Wire Wire Line
+	4050 2700 4050 3300
+Wire Wire Line
+	4050 2700 4950 2700
+Wire Wire Line
+	4150 3300 4150 5100
+Wire Wire Line
+	4150 3300 4950 3300
+Wire Wire Line
+	4950 3400 4750 3400
+Wire Wire Line
+	4750 3400 4750 5000
+Wire Wire Line
+	3150 5000 4750 5000
+Wire Wire Line
+	3150 3300 4050 3300
+Wire Wire Line
+	1450 4500 1950 4500
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U1
+U 1 1 5E7981AC
+P 2550 3900
+F 0 "U1" H 2550 2311 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 2550 2220 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2550 3900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 2550 3900 50  0001 C CNN
+	1    2550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3600 4850 4400
+Wire Wire Line
+	4850 4400 3150 4400
+Wire Wire Line
+	5950 2800 5950 4800
+Wire Wire Line
+	3150 4800 5950 4800
+Wire Wire Line
+	5850 4700 3150 4700
+Wire Wire Line
+	5850 2700 5850 4700
+Wire Wire Line
+	3150 4600 5750 4600
+Wire Wire Line
+	5750 2600 5750 4600
+Wire Wire Line
+	3150 4500 5650 4500
+Wire Wire Line
+	5650 2500 5650 4500
+Wire Wire Line
+	2550 5400 2550 5700
+Wire Wire Line
+	1350 4600 1350 5600
+Wire Wire Line
+	1500 5600 1350 5600
+Wire Wire Line
+	1500 5250 1500 5600
+Connection ~ 1350 5600
+$Comp
+L power:Earth #PWR?
+U 1 1 5EB8854D
+P 4450 5850
+F 0 "#PWR?" H 4450 5600 50  0001 C CNN
+F 1 "Earth" H 4450 5700 50  0001 C CNN
+F 2 "" H 4450 5850 50  0001 C CNN
+F 3 "~" H 4450 5850 50  0001 C CNN
+	1    4450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5EB889B1
+P 4650 5850
+F 0 "#PWR?" H 4650 5600 50  0001 C CNN
+F 1 "GNDREF" H 4655 5677 50  0000 C CNN
+F 2 "" H 4650 5850 50  0001 C CNN
+F 3 "" H 4650 5850 50  0001 C CNN
+	1    4650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5850 4450 5850
 $EndSCHEMATC
