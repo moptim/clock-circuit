@@ -41,7 +41,7 @@ U 1 1 5E7946A0
 P 3150 2000
 F 0 "Q1" H 3340 2046 50  0000 L CNN
 F 1 "TEPT4400" H 3340 1955 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm_Clear" H 3630 1860 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm_Front" H 3630 1860 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/81341/tept4400.pdf" H 3150 2000 50  0001 C CNN
 	1    3150 2000
 	1    0    0    -1  
@@ -560,4 +560,24 @@ Wire Wire Line
 	5550 2500 5750 2500
 Wire Wire Line
 	5750 2500 5750 4600
+$Comp
+L Device:R R2
+U 1 1 5EBF7F26
+P 550 2200
+F 0 "R2" H 620 2246 50  0000 L CNN
+F 1 "1M" H 620 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 480 2200 50  0001 C CNN
+F 3 "~" H 550 2200 50  0001 C CNN
+	1    550  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	550  2050 550  1700
+Wire Wire Line
+	550  1700 800  1700
+Connection ~ 800  1700
+Wire Wire Line
+	550  2350 550  2700
+Wire Wire Line
+	550  2700 800  2700
 $EndSCHEMATC
