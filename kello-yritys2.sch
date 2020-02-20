@@ -560,4 +560,45 @@ Wire Wire Line
 	5550 2500 5750 2500
 Wire Wire Line
 	5750 2500 5750 4600
+$Comp
+L Device:CP C9
+U 1 1 5EDC347B
+P 400 2200
+F 0 "C9" H 518 2246 50  0000 L CNN
+F 1 "100uF" H 518 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 438 2050 50  0001 C CNN
+F 3 "~" H 400 2200 50  0001 C CNN
+	1    400  2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EDC38E1
+P 100 2200
+F 0 "C2" H 215 2246 50  0000 L CNN
+F 1 "100nF" H 215 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 138 2050 50  0001 C CNN
+F 3 "~" H 100 2200 50  0001 C CNN
+	1    100  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	100  1700 100  2050
+Connection ~ 800  1700
+Wire Wire Line
+	100  2350 100  2700
+Wire Wire Line
+	400  2350 400  2700
+Wire Wire Line
+	100  2700 400  2700
+Wire Wire Line
+	400  2700 800  2700
+Connection ~ 400  2700
+Wire Wire Line
+	400  2050 400  1700
+Wire Wire Line
+	800  1700 400  1700
+Wire Wire Line
+	400  1700 100  1700
+Connection ~ 400  1700
 $EndSCHEMATC

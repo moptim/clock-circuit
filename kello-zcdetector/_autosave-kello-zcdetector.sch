@@ -69,8 +69,6 @@ F 3 "~" H 1450 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 3150 1950 3150
-Wire Wire Line
 	1650 3250 1800 3250
 Wire Wire Line
 	2250 3550 2450 3550
@@ -136,10 +134,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 3200 5200 3200
 $Comp
-L Device:Fuse F?
+L Device:Fuse F1
 U 1 1 5E4EBF45
 P 1800 3400
-F 0 "F?" H 1740 3354 50  0000 R CNN
+F 0 "F1" H 1740 3354 50  0000 R CNN
 F 1 "Fuse" H 1740 3445 50  0000 R CNN
 F 2 "Fuse:Fuse_10mmx3mm" V 1730 3400 50  0001 C CNN
 F 3 "~" H 1800 3400 50  0001 C CNN
@@ -150,4 +148,15 @@ Wire Wire Line
 	3800 3150 3800 3550
 Wire Wire Line
 	1800 3550 1950 3550
+$Comp
+L Device:Fuse F2
+U 1 1 5EDDD343
+P 1800 3150
+F 0 "F2" H 1740 3104 50  0000 R CNN
+F 1 "Fuse" H 1740 3195 50  0000 R CNN
+F 2 "Fuse:Fuse_10mmx3mm" V 1730 3150 50  0001 C CNN
+F 3 "~" H 1800 3150 50  0001 C CNN
+	1    1800 3150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
