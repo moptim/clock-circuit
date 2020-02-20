@@ -60,37 +60,20 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5E892E28
-P 1450 3150
-F 0 "J1" H 1558 3331 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1558 3240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 3150 50  0001 C CNN
-F 3 "~" H 1450 3150 50  0001 C CNN
-	1    1450 3150
+P 1200 3150
+F 0 "J1" H 1308 3331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1308 3240 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1200 3150 50  0001 C CNN
+F 3 "~" H 1200 3150 50  0001 C CNN
+	1    1200 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 3250 1800 3250
 Wire Wire Line
 	2250 3550 2450 3550
 Wire Wire Line
 	2250 3150 2450 3150
-$Comp
-L Device:D_Bridge_+-AA D1
-U 1 1 5E893821
-P 3300 3150
-F 0 "D1" V 3346 2806 50  0000 R CNN
-F 1 "D_Bridge_+-AA" V 3255 2806 50  0000 R CNN
-F 2 "Diode_SMD:Diode_Bridge_Diotec_SO-DIL-Slim" H 3300 3150 50  0001 C CNN
-F 3 "~" H 3300 3150 50  0001 C CNN
-	1    3300 3150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3000 3150 2750 3150
-Wire Wire Line
-	2750 3550 3800 3550
-Wire Wire Line
-	3800 3150 3600 3150
 $Comp
 L Isolator:LTV-817S U1
 U 1 1 5E894A62
@@ -102,18 +85,6 @@ F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4250 3500 50  000
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 3100 3950 3100
-Wire Wire Line
-	3950 3100 3950 2850
-Wire Wire Line
-	3950 2850 3300 2850
-Wire Wire Line
-	3300 3450 3950 3450
-Wire Wire Line
-	3950 3450 3950 3300
-Wire Wire Line
-	3950 3300 4300 3300
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5E895CD5
@@ -126,7 +97,7 @@ F 3 "~" H 5400 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5200 3100 4900 3100
+	5200 3100 4950 3100
 Wire Wire Line
 	5050 3200 5050 3300
 Wire Wire Line
@@ -136,27 +107,82 @@ Wire Wire Line
 $Comp
 L Device:Fuse F1
 U 1 1 5E4EBF45
-P 1800 3400
-F 0 "F1" H 1740 3354 50  0000 R CNN
-F 1 "Fuse" H 1740 3445 50  0000 R CNN
-F 2 "Fuse:Fuse_10mmx3mm" V 1730 3400 50  0001 C CNN
-F 3 "~" H 1800 3400 50  0001 C CNN
-	1    1800 3400
-	-1   0    0    1   
+P 1650 3550
+F 0 "F1" H 1590 3504 50  0000 R CNN
+F 1 "Fuse" H 1590 3595 50  0000 R CNN
+F 2 "Fuse:Fuse_10mmx3mm" V 1580 3550 50  0001 C CNN
+F 3 "~" H 1650 3550 50  0001 C CNN
+	1    1650 3550
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3800 3150 3800 3550
 Wire Wire Line
 	1800 3550 1950 3550
 $Comp
-L Device:Fuse F?
+L Device:Fuse F2
 U 1 1 5EDDD343
-P 1800 3150
-F 0 "F?" H 1740 3104 50  0000 R CNN
-F 1 "Fuse" H 1740 3195 50  0000 R CNN
-F 2 "Fuse:Fuse_10mmx3mm" V 1730 3150 50  0001 C CNN
-F 3 "~" H 1800 3150 50  0001 C CNN
-	1    1800 3150
+P 1650 3150
+F 0 "F2" H 1590 3104 50  0000 R CNN
+F 1 "Fuse" H 1590 3195 50  0000 R CNN
+F 2 "Fuse:Fuse_10mmx3mm" V 1580 3150 50  0001 C CNN
+F 3 "~" H 1650 3150 50  0001 C CNN
+	1    1650 3150
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Isolator:LTV-817S U?
+U 1 1 5EDE879D
+P 4600 3550
+F 0 "U?" H 4600 3875 50  0000 C CNN
+F 1 "LTV-817S" H 4600 3784 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-4_W9.53mm" H 4600 3250 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4250 3850 50  0001 C CNN
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3450 4950 3450
+Wire Wire Line
+	4950 3450 4950 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	4950 3100 4900 3100
+Wire Wire Line
+	5050 3300 5050 3650
+Wire Wire Line
+	5050 3650 4900 3650
+Connection ~ 5050 3300
+Wire Wire Line
+	2750 3550 3000 3550
+Wire Wire Line
+	3550 3650 4300 3650
+Wire Wire Line
+	4300 3100 3550 3100
+Wire Wire Line
+	4300 3300 4100 3300
+Wire Wire Line
+	4300 3450 4100 3450
+Wire Wire Line
+	4100 3450 4100 3300
+Wire Wire Line
+	1500 3150 1400 3150
+Wire Wire Line
+	1400 3250 1450 3250
+Wire Wire Line
+	1450 3250 1450 3550
+Wire Wire Line
+	1450 3550 1500 3550
+Wire Wire Line
+	1800 3150 1950 3150
+Wire Wire Line
+	4100 3450 3000 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	3000 3150 3000 3450
+Wire Wire Line
+	3550 3650 3000 3650
+Wire Wire Line
+	3000 3650 3000 3550
+Connection ~ 3550 3650
+Wire Wire Line
+	3550 3100 3550 3650
 $EndSCHEMATC
