@@ -80,7 +80,7 @@ F 3 "" H 3450 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AVR-ISP-6 J3
+L kello-yritys2-rescue:AVR-ISP-6-Connector J3
 U 1 1 5E7979B3
 P 5150 1700
 F 0 "J3" H 4870 1796 50  0000 R CNN
@@ -237,23 +237,12 @@ F 3 "~" H 2550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 5E83AA86
-P 1500 5100
-F 0 "R1" V 1293 5100 50  0000 C CNN
-F 1 "47k" V 1384 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 5100 50  0001 C CNN
-F 3 "~" H 1500 5100 50  0001 C CNN
-	1    1500 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J1
+L Connector:Conn_01x03_Male J1
 U 1 1 5E849348
 P 550 5600
 F 0 "J1" H 658 5781 50  0000 C CNN
 F 1 "Conn_01x02_Male_To_Opto" H 658 5690 50  0000 C CNN
-F 2 "Resistor_SMD:R_1210_3225Metric" H 550 5600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 550 5600 50  0001 C CNN
 F 3 "~" H 550 5600 50  0001 C CNN
 	1    550  5600
 	1    0    0    -1  
@@ -290,21 +279,6 @@ Connection ~ 800  2700
 Wire Wire Line
 	800  2700 800  2800
 Wire Wire Line
-	1500 5750 1500 5700
-Wire Wire Line
-	750  5700 1500 5700
-$Comp
-L power:+5V #PWR0108
-U 1 1 5E988C60
-P 1500 4850
-F 0 "#PWR0108" H 1500 4700 50  0001 C CNN
-F 1 "+5V" H 1515 5023 50  0000 C CNN
-F 2 "" H 1500 4850 50  0001 C CNN
-F 3 "" H 1500 4850 50  0001 C CNN
-	1    1500 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1550 3900 1400 3900
 Wire Wire Line
 	1550 3900 1550 4400
@@ -314,10 +288,6 @@ Wire Wire Line
 	1450 4300 1450 4500
 Wire Wire Line
 	750  5600 1350 5600
-Wire Wire Line
-	1950 4600 1350 4600
-Wire Wire Line
-	1500 4950 1500 4850
 Wire Wire Line
 	950  6900 950  6850
 Connection ~ 950  6900
@@ -367,12 +337,12 @@ $EndComp
 $Comp
 L power:Earth #PWR0111
 U 1 1 5E83C367
-P 1500 5750
-F 0 "#PWR0111" H 1500 5500 50  0001 C CNN
-F 1 "Earth" H 1500 5600 50  0001 C CNN
-F 2 "" H 1500 5750 50  0001 C CNN
-F 3 "~" H 1500 5750 50  0001 C CNN
-	1    1500 5750
+P 750 5750
+F 0 "#PWR0111" H 750 5500 50  0001 C CNN
+F 1 "Earth" H 750 5600 50  0001 C CNN
+F 2 "" H 750 5750 50  0001 C CNN
+F 3 "~" H 750 5750 50  0001 C CNN
+	1    750  5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -493,7 +463,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 4500 1950 4500
 $Comp
-L MCU_Microchip_ATmega:ATmega328PB-AU U1
+L kello-yritys2-rescue:ATmega328PB-AU-MCU_Microchip_ATmega U1
 U 1 1 5E7981AC
 P 2550 3900
 F 0 "U1" H 2550 2311 50  0000 C CNN
@@ -523,11 +493,6 @@ Wire Wire Line
 	2550 5400 2550 5700
 Wire Wire Line
 	1350 4600 1350 5600
-Wire Wire Line
-	1500 5600 1350 5600
-Wire Wire Line
-	1500 5250 1500 5600
-Connection ~ 1350 5600
 $Comp
 L power:Earth #PWR0119
 U 1 1 5EB8854D
@@ -561,44 +526,57 @@ Wire Wire Line
 Wire Wire Line
 	5750 2500 5750 4600
 $Comp
-L Device:CP C9
-U 1 1 5EDC347B
-P 400 2200
-F 0 "C9" H 518 2246 50  0000 L CNN
-F 1 "100uF" H 518 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 438 2050 50  0001 C CNN
-F 3 "~" H 400 2200 50  0001 C CNN
-	1    400  2200
+L power:+5V #PWR0108
+U 1 1 5E988C60
+P 750 5250
+F 0 "#PWR0108" H 750 5100 50  0001 C CNN
+F 1 "+5V" H 765 5423 50  0000 C CNN
+F 2 "" H 750 5250 50  0001 C CNN
+F 3 "" H 750 5250 50  0001 C CNN
+	1    750  5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  5250 750  5500
+Wire Wire Line
+	750  5700 750  5750
+Wire Wire Line
+	1350 6250 2350 6250
+Wire Wire Line
+	2350 6250 2350 6400
+Wire Wire Line
+	2350 6400 2250 6400
+Connection ~ 1350 6250
+Wire Wire Line
+	2250 6600 2350 6600
+Wire Wire Line
+	2350 6600 2350 6900
+Wire Wire Line
+	2350 6900 950  6900
+$Comp
+L Connector:Barrel_Jack J4
+U 1 1 5EE7A642
+P 1950 6500
+F 0 "J4" H 2007 6825 50  0000 C CNN
+F 1 "Barrel_Jack" H 2007 6734 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2000 6460 50  0001 C CNN
+F 3 "~" H 2000 6460 50  0001 C CNN
+	1    1950 6500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
-U 1 1 5EDC38E1
-P 100 2200
-F 0 "C2" H 215 2246 50  0000 L CNN
-F 1 "100nF" H 215 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 138 2050 50  0001 C CNN
-F 3 "~" H 100 2200 50  0001 C CNN
-	1    100  2200
-	1    0    0    -1  
+L Device:R R1
+U 1 1 5F38009E
+P 1600 4600
+F 0 "R1" H 1670 4646 50  0000 L CNN
+F 1 "1k" H 1670 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 4600 50  0001 C CNN
+F 3 "~" H 1600 4600 50  0001 C CNN
+	1    1600 4600
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	100  1700 100  2050
-Connection ~ 800  1700
+	1350 4600 1450 4600
 Wire Wire Line
-	100  2350 100  2700
-Wire Wire Line
-	400  2350 400  2700
-Wire Wire Line
-	100  2700 400  2700
-Wire Wire Line
-	400  2700 800  2700
-Connection ~ 400  2700
-Wire Wire Line
-	400  2050 400  1700
-Wire Wire Line
-	800  1700 400  1700
-Wire Wire Line
-	400  1700 100  1700
-Connection ~ 400  1700
+	1750 4600 1950 4600
 $EndSCHEMATC

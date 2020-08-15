@@ -72,47 +72,30 @@ F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4250 3500 50  000
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5E895CD5
-P 5400 3200
-F 0 "J2" H 5372 3082 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 5372 3173 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 3200 50  0001 C CNN
-F 3 "~" H 5400 3200 50  0001 C CNN
-	1    5400 3200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5050 3200 5050 3300
 Wire Wire Line
 	5050 3300 4900 3300
-Wire Wire Line
-	5050 3200 5200 3200
-Wire Wire Line
-	1800 3550 1950 3550
-Wire Wire Line
-	1650 3250 1800 3250
 $Comp
 L Device:Fuse F2
 U 1 1 5EDDD343
-P 1800 3150
-F 0 "F2" H 1740 3104 50  0000 R CNN
-F 1 "Fuse" H 1740 3195 50  0000 R CNN
-F 2 "Fuse:Fuse_10mmx3mm" V 1730 3150 50  0001 C CNN
-F 3 "~" H 1800 3150 50  0001 C CNN
-	1    1800 3150
-	0    -1   -1   0   
+P 1600 3250
+F 0 "F2" H 1540 3204 50  0000 R CNN
+F 1 "Fuse" H 1540 3295 50  0000 R CNN
+F 2 "Fuse:Fuse_10mmx3mm" V 1530 3250 50  0001 C CNN
+F 3 "~" H 1600 3250 50  0001 C CNN
+	1    1600 3250
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5E892E28
-P 1450 3150
-F 0 "J1" H 1558 3331 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1558 3240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:AC_connector" H 1450 3150 50  0001 C CNN
-F 3 "~" H 1450 3150 50  0001 C CNN
-	1    1450 3150
+P 1250 3150
+F 0 "J1" H 1358 3331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1358 3240 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:AC_connector" H 1250 3150 50  0001 C CNN
+F 3 "~" H 1250 3150 50  0001 C CNN
+	1    1250 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -138,8 +121,6 @@ Wire Wire Line
 	3950 3100 3950 2850
 Wire Wire Line
 	4300 3100 3950 3100
-Wire Wire Line
-	5200 3100 4900 3100
 $Comp
 L Device:D_Bridge_+-AA D1
 U 1 1 5E893821
@@ -159,4 +140,51 @@ Wire Wire Line
 	3800 3150 3600 3150
 Wire Wire Line
 	3000 3150 2750 3150
+$Comp
+L Device:R R5
+U 1 1 5E5E3A5F
+P 5350 3000
+F 0 "R5" V 5143 3000 50  0000 C CNN
+F 1 "47k" V 5234 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 3000 50  0001 C CNN
+F 3 "~" H 5350 3000 50  0001 C CNN
+	1    5350 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5E895CD5
+P 5950 3100
+F 0 "J2" H 5922 2982 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5922 3073 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5950 3100 50  0001 C CNN
+F 3 "~" H 5950 3100 50  0001 C CNN
+	1    5950 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3200 5750 3200
+Wire Wire Line
+	4900 3100 5100 3100
+Wire Wire Line
+	5750 3000 5500 3000
+Wire Wire Line
+	5200 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 3100
+Connection ~ 5100 3100
+Wire Wire Line
+	5100 3100 5750 3100
+Wire Wire Line
+	1800 3550 1950 3550
+Wire Wire Line
+	1800 3250 1800 3150
+Wire Wire Line
+	1800 3150 1450 3150
+Wire Wire Line
+	1750 3250 1750 3200
+Wire Wire Line
+	1750 3200 1950 3200
+Wire Wire Line
+	1950 3200 1950 3150
 $EndSCHEMATC
