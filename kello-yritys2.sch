@@ -85,7 +85,7 @@ U 1 1 5E7979B3
 P 5150 1700
 F 0 "J3" H 4870 1796 50  0000 R CNN
 F 1 "AVR-ISP-6" H 4870 1705 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 4900 1750 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0607_1x06-1MP_P1.00mm_Vertical" V 4900 1750 50  0000 C CNN
 F 3 " ~" H 3875 1150 50  0001 C CNN
 	1    5150 1700
 	-1   0    0    -1  
