@@ -579,4 +579,24 @@ Wire Wire Line
 	1350 4600 1450 4600
 Wire Wire Line
 	1750 4600 1950 4600
+$Comp
+L Device:C C12
+U 1 1 5F4C1EB9
+P 300 2200
+F 0 "C12" H 415 2246 50  0000 L CNN
+F 1 "100nF" H 415 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 338 2050 50  0001 C CNN
+F 3 "~" H 300 2200 50  0001 C CNN
+	1    300  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	300  2050 300  1700
+Wire Wire Line
+	300  1700 800  1700
+Connection ~ 800  1700
+Wire Wire Line
+	800  2700 300  2700
+Wire Wire Line
+	300  2700 300  2350
 $EndSCHEMATC

@@ -1,0 +1,17 @@
+Glo0 PD5
+Glo1 PB7
+Glo2 PB6
+Glo3 PB3
+Glo4 PB5
+Glo5 PB4
+Glo6 PB2
+Glo7 PB1
+Glo8 PD7
+Glo9 PD6
+GloA PB0
+GloB PD0
+
+Ghi0 PD2
+Ghi1 PD1
+Ghi2 PD3
+Ghi3 PD4
